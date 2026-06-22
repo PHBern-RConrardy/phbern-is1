@@ -1,0 +1,10 @@
+{
+  "template.qmd": {
+    "template.html": "6eeb5cde",
+    "template.docx": "a31f84c3",
+    "template.typ": "e55f91b4"
+  },
+  "examples/slides.qmd": {
+    "slides.html": "787cd08c"
+  }
+}

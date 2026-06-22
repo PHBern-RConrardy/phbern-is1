@@ -1,0 +1,27 @@
+---
+title: "Berichtstitel"
+author: "Vorname Name"
+date: today
+format:
+  phbern-docx: default
+  phbern-typst: default
+  phbern-html: default
+---
+
+# Rückmeldungen zu Lernumgebungen
+
+## Lernumgebung
+
+Text.
+
+## Ablauf
+
+Text.
+
+## Organisation
+
+Text.
+
+## Bibliographie
+
+Beispielhafte Literaturangabe.

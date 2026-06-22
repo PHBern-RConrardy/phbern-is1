@@ -1,0 +1,85 @@
+---
+title: "Titel"
+subtitle: "Untertitel oder Datum"
+format:
+  phbern-revealjs: default
+author: Richard Conrardy, Dozent, richard.conrardy@phbern.ch
+date: today
+---
+
+# Einstieg
+
+## uebung {.uebung}
+
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Linke Spalte
+
+- Zentrale Idee
+- Kurzer Text
+- Maximal 3–4 Punkte
+:::
+
+::: {.column width="55%"}
+### Rechte Spalte
+
+Kurze Bildlegende oder Erklärung.
+:::
+
+::::
+
+## Überblick {.science}
+
+- Erster Punkt
+- Zweiter Punkt
+- Dritter Punkt
+
+## Zwei Spalten
+
+:::: {.columns}
+::: {.column width="50%"}
+### Links
+
+Text, Listen oder Code.
+:::
+
+::: {.column width="50%"}
+### Rechts
+
+Weitere Inhalte.
+:::
+::::
+
+# Berichtsteil
+
+## Abschnitt
+
+Dies ist ein kurzer Beispieltext für DOCX, Typst/PDF und HTML. Die Präsentationsformate nutzen dieselbe Quelle, aber eine andere visuelle Umsetzung.
+
+## Tabelle
+
+| Bereich | Status |
+|---|---:|
+| RevealJS | wichtig |
+| PPTX | Referenzvorlage |
+| DOCX | Word-nah |
+| Typst | PDF-nah |
+
+
+| Variable | Description | Scale / Coding | Example value |
+|---|---|---:|---:|
+| `student_id` | Anonymous student identifier | Text | `S042` |
+| `condition` | Experimental condition assigned to the student | PS-I / I-PS | `PS-I` |
+| `pretest_score` | Score before the intervention | 0–20 points | 11 |
+| `posttest_score` | Score after the intervention | 0–20 points | 16 |
+| `gain_score` | Difference between posttest and pretest | Points | 5 |
+| `engagement_home` | Self-reported engagement during home preparation | 1–5 Likert scale | 3.8 |
+| `engagement_class` | Self-reported engagement during in-class activities | 1–5 Likert scale | 4.4 |
+| `cognitive_load` | Perceived cognitive load after the lesson | 1–7 Likert scale | 5.2 |
+| `conceptual_understanding` | Score on conceptual transfer items | 0–10 points | 7 |
+| `time_on_task` | Total time spent on assigned activities | Minutes | 48 |
+| `notes` | Optional qualitative observation or comment | Text | `Worked actively in group phase` |
+
+: Descriptive overview of variables used in the study 

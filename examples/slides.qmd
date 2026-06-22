@@ -1,0 +1,32 @@
+---
+title: "Beispielpräsentation"
+subtitle: "PHBern Quarto"
+author: "Vorname Name, Funktion"
+date: today
+format:
+  phbern-revealjs: default
+  phbern-pptx: default
+---
+
+## Inhalt
+
+- Kontext
+- Vorgehen
+- Ergebnisse
+
+## Titel Folie
+
+Eine Inhaltsfolie im Stil der PHBern PowerPoint-Vorlage.
+
+## Spalten
+
+:::: {.columns}
+::: {.column width="50%"}
+- Punkt A
+- Punkt B
+:::
+::: {.column width="50%"}
+- Punkt C
+- Punkt D
+:::
+::::
