@@ -29,7 +29,7 @@
     ]
 
     #place(top + right, dy: -10pt)[
-      #image("_extensions/phbern/assets/Log_PHB_black.eps.svg", width: 70mm)
+      #image("_extensions/PHBern-Rconrardy/phbern/assets/Log_PHB_black.eps.svg", width: 70mm)
     ]
 
     #place(bottom + left)[
