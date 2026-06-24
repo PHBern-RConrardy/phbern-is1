@@ -16,7 +16,7 @@ $link-color: $phbern-bordeaux !default;
   position: absolute;
   left: 3px;
   right: 3px;
-  bottom: 15px;
+  bottom: 0;
   border-top: 2px solid #d6d6d6;
 }
 
@@ -147,14 +147,7 @@ body:has(#title-slide.present) .reveal .slide-logo {
 $uebung-bg: $phbern-beige-light;
 $science-bg: $phbern-blue-mid;
 
-/* content area */
-.reveal .slides section.uebung {
-  background-color: $uebung-bg !important;
-}
 
-.reveal .slides section.science {
-  background-color: $science-bg !important;
-}
 
 /* full Reveal background for .uebung slides */
 body:has(.reveal .slides section.uebung.present),
@@ -173,6 +166,23 @@ body:has(.reveal .slides section.science.present) .reveal,
 body:has(.reveal .slides section.science.present) .reveal .backgrounds,
 body:has(.reveal .slides section.science.present) .reveal .slide-background.present,
 body:has(.reveal .slides section.science.present) .reveal .slide-background.present .slide-background-content {
-  background-color: $science-bg !important;
+  background-color: $science-bg ;
 }
 
+
+.reveal .slides section > img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body:has(.reveal .slides section.science.present)
+  .reveal
+  .backgrounds
+  .slide-background.present
+  .slide-background-content {
+  background-image: url("../../../../../_extensions/PHBern-RConrardy/phbern/svgrepo_soco-st-various-illustration-vectors/493141_a-woman-doing-research-and-experiments.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 200px auto !important;
+  background-position: right 10px top 10px !important;
+}

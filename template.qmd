@@ -11,6 +11,9 @@ date: today
 
 ## uebung {.uebung}
 
+![](_extensions/PHBern-Rconrardy/phbern/svgrepo_soco-st-various-illustration-vectors/492690_incoming-mail.svg)
+
+## science {.science}
 
 :::: {.columns}
 
