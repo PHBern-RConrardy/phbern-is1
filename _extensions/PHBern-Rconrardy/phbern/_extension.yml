@@ -6,6 +6,8 @@ contributes:
   formats:
     common:
       lang: de-CH
+      author: Richard Conrardy
+      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib
     html:
       theme:
         - cosmo
