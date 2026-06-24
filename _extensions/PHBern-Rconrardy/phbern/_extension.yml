@@ -7,7 +7,6 @@ contributes:
     common:
       lang: de-CH
       author: Richard Conrardy
-      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib
     html:
       theme:
         - cosmo
@@ -15,12 +14,15 @@ contributes:
       toc: true
       toc-title: Inhalt
       number-sections: false
+      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib
     revealjs:
       theme:
         - default
         - styles/phbern-revealjs.scss
       width: 1600
       height: 900
+      filters:
+        - revealjs-bibliography-slide.lua
       slide-number: c
       controls: false
       progress: false
@@ -37,6 +39,7 @@ contributes:
         data-background-repeat: no-repeat
       date-format: "DD.MM.YYYY"
       logo: assets/Log_PHB_black.eps.svg
+      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib
     typst:
       papersize: a4
       fontsize: 10pt
@@ -53,7 +56,9 @@ contributes:
       reference-doc: reference.docx
       toc: false
       number-sections: false
+      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib
     pptx:
       reference-doc: reference.pptx
       slide-level: 2
       toc: false
+      bibliography: _extensions/PHBern-Rconrardy/phbern/library.bib

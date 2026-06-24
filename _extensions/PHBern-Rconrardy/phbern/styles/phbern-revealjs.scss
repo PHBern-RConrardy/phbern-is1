@@ -3,7 +3,7 @@
 
 $font-family-sans-serif: Arial, Helvetica, "Liberation Sans", sans-serif !default;
 $presentation-heading-font: Arial, Helvetica, "Liberation Sans", sans-serif !default;
-$presentation-font-size-root: 32px !default;
+$presentation-font-size-root: 36px !default;
 $presentation-heading-color: #000000 !default;
 $presentation-title-slide-text-align: left !default;
 $link-color: $phbern-bordeaux !default;
@@ -44,7 +44,7 @@ body:has(#title-slide.present) .reveal .slide-number {
 
 .reveal h2 {
   margin: 0 0 36px 0;
-  font-size: 32px;
+  font-size: 1.3em;
   line-height: 1.08;
 }
 
@@ -74,7 +74,7 @@ body:has(#title-slide.present) .reveal .slide-number {
 
 
 .reveal h1 {
-  font-size: 50px !important;
+  font-size: 1.5em !important;
   text-decoration-line: underline;
   text-decoration-color: $phbern-bordeaux;
   text-decoration-thickness: 5px;
@@ -101,20 +101,12 @@ body:has(#title-slide.present) .reveal .slide-number {
 
 .reveal section.section-title h1,
 .reveal section.section-title h2 {
-  font-size: 54px;
+  font-size: 2em;
   border-bottom: 5px solid $phbern-bordeaux;
   display: inline-block;
   padding-bottom: 8px;
 }
 
-.reveal table {
-  font-size: 21px;
-}
-
-.reveal pre code {
-  font-size: 18px;
-  max-height: 510px;
-}
 
 
 /* Make sure the title slide itself does not draw a white panel */

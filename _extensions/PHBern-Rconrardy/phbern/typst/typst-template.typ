@@ -116,4 +116,8 @@ if title != none or subtitle != none or author != none {
   )
 
   body
+
+  let bib-path = "$bibliography$".replace("\\_", "_")
+  bibliography("_extensions/PHBern-Rconrardy/phbern/library.bib")
 }
+

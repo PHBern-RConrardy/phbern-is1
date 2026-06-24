@@ -83,3 +83,5 @@ Dies ist ein kurzer Beispieltext für DOCX, Typst/PDF und HTML. Die Präsentatio
 | `notes` | Optional qualitative observation or comment | Text | `Worked actively in group phase` |
 
 : Descriptive overview of variables used in the study 
+
+@li2026
