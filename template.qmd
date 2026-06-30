@@ -2,12 +2,14 @@
 title: "Titel"
 subtitle: "Untertitel oder Datum"
 format:
-  phbern-revealjs: default
+  phbern-typst: default
 author: Richard Conrardy, Dozent, richard.conrardy@phbern.ch
 date: today
 ---
 
 # Einstieg
+
+test [@chi2014b]
 
 ## uebung {.uebung}
 
