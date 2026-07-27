@@ -1,3 +1,5 @@
+#set bibliography(style: "_extensions/PHBern-RConrardy/phbern/assets/apa.csl")
+
 #show: doc => phbern(
 $if(title)$
   title: "$title$",

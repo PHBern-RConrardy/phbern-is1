@@ -34,6 +34,7 @@
 
     #place(bottom + left)[
       #rect(width: 100%, height: 2pt, fill: black, stroke: none)
+      #v(8pt)
     ]
   ]
 ],
