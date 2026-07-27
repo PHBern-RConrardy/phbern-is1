@@ -23,19 +23,34 @@ end
 
 function Header(header)
   local padlet_url = header.attributes["data-padlet-url"]
+  local paper_link = header.attributes["data-paper-link"]
 
-  if not padlet_url then
+  if padlet_url and paper_link then
+    error("A slide cannot use both data-padlet-url and data-paper-link.")
+  end
+
+  if not padlet_url and not paper_link then
     return nil
   end
 
-  local link = pandoc.Link(
-    padlet_url,
-    with_scheme(padlet_url),
-    "",
-    pandoc.Attr("", {}, { target = "_blank", rel = "noopener noreferrer" })
-  )
+  local link
+  local div_class
+
+  if padlet_url then
+    link = pandoc.Link(
+      padlet_url,
+      with_scheme(padlet_url),
+      "",
+      pandoc.Attr("", {}, { target = "_blank", rel = "noopener noreferrer" })
+    )
+    div_class = "padlet-url"
+  else
+    link = pandoc.Link("Übungsblatt", paper_link)
+    div_class = "paper-link"
+  end
+
   local para = pandoc.Para({ link })
-  local div = pandoc.Div({ para }, pandoc.Attr("", { "padlet-url" }, {}))
+  local div = pandoc.Div({ para }, pandoc.Attr("", { div_class }, {}))
 
   return { header, div }
 end

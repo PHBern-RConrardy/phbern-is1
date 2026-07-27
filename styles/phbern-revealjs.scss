@@ -222,7 +222,19 @@ body:has(.reveal .slides section.padlet.present)
   background-position: right 10px bottom 10px !important;
 }
 
-.reveal .slides section.padlet .padlet-url {
+body:has(.reveal .slides section.paper.present)
+  .reveal
+  .backgrounds
+  .slide-background.present
+  .slide-background-content {
+  background-image: url("../../../../_extensions/PHBern-RConrardy/phbern/assets/soco-st/492851_notepad-and-pen.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 200px auto !important;
+  background-position: right 10px bottom 10px !important;
+}
+
+.reveal .slides section.padlet .padlet-url,
+.reveal .slides section.paper .paper-link {
   position: absolute;
   left: 50%;
   bottom: 28px;
@@ -233,11 +245,13 @@ body:has(.reveal .slides section.padlet.present)
   white-space: nowrap;
 }
 
-.reveal .slides section.padlet .padlet-url p {
+.reveal .slides section.padlet .padlet-url p,
+.reveal .slides section.paper .paper-link p {
   margin: 0;
 }
 
-.reveal .slides section.padlet .padlet-url a {
+.reveal .slides section.padlet .padlet-url a,
+.reveal .slides section.paper .paper-link a {
   color: #000;
   text-decoration: none;
 }
