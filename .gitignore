@@ -2,6 +2,7 @@
 **/.DS_Store
 .quarto/
 **/.quarto/
+_site/
 /site_libs/
 
 # Rendered examples
