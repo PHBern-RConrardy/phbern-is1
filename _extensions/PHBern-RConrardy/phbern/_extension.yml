@@ -49,7 +49,8 @@ contributes:
       citeproc: true
       papersize: a4
       fontsize: 10.5pt
-      mainfont: Arial
+      mainfont: Liberation Sans
+      font-paths: assets/fonts
       logo: assets/Log_PHB_black.eps.svg
       toc-title: Inhalt
       filters:

@@ -27,5 +27,3 @@ gewohnt verwendet werden [@mayer2021].
 | Überschriften | kurz und hierarchisch |
 | Abbildungen | immer mit Alternativtext |
 | Literatur | über BibTeX-Schlüssel zitieren |
-
-# Literatur

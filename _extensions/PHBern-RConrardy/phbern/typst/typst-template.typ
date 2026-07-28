@@ -9,7 +9,7 @@
   toc-indent: 1.5em,
   body: none,
 ) = {
-  set text(font: ("Arial", "Helvetica"), size: 10.5pt, lang: "de")
+  set text(font: "Liberation Sans", size: 10.5pt, lang: "de")
   set par(leading: 0.58em)
 
   set page(
@@ -23,7 +23,7 @@
   #block(width: 100%, height: 12mm)[
 
     #place(top + left)[
-      #set text(font: ("Arial", "Helvetica"), size: 8pt)
+      #set text(font: "Liberation Sans", size: 8pt)
 
       #stack(
         dir: ttb,
@@ -63,7 +63,7 @@
 if title != none or subtitle != none or author != none {
   block(width: 100%, inset: (top: 12pt), below: 12pt)[
     #set align(left)
-    #set text(font: ("Arial", "Helvetica"))
+    #set text(font: "Liberation Sans")
 
     #stack(
       dir: ttb,

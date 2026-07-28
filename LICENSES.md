@@ -3,6 +3,12 @@
 This repository combines material with different rights and licensing
 conditions.
 
+## Bundled Liberation Sans fonts
+
+`_extensions/PHBern-RConrardy/phbern/assets/fonts/` contains Liberation Sans
+regular, bold, italic, and bold italic, copyright Google Corporation and Red
+Hat, Inc. The font files are licensed under the [SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/).
+
 ## Soco St illustrations
 
 The illustrations in

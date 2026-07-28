@@ -6,6 +6,13 @@ format: phbern-revealjs
 bibliography: library.bib
 ---
 
+<!--
+The extension supplies the title background, logo, canvas size, and navigation
+settings from `format: phbern-revealjs`. Do not recreate them in slide markup.
+The legal and bibliography slides are appended automatically by the format;
+there is intentionally no source heading for either slide below.
+-->
+
 # Einstieg
 
 ## Ziele
@@ -19,6 +26,8 @@ Briefly explain that the examples mirror recurring patterns in PPD_1 and
 PPD_2. Open speaker view with the S key.
 :::
 
+<!-- `.uebung` sets the activity appearance; `.padlet` and `data-padlet-url`
+create the decoration and clickable URL. -->
 ## Kennenlernen {.uebung .padlet data-padlet-url="padlet.com/phbern/example"}
 
 :::: {.columns style="align-items: center; min-height: 520px;"}
@@ -42,6 +51,7 @@ This slide exercises the activity colour, Padlet decoration, generated URL,
 columns, a bundled image, and speaker notes.
 :::
 
+<!-- `.paper` and `data-paper-link` create the worksheet decoration and link. -->
 ## Arbeitsauftrag {.uebung .paper data-paper-link="handout.pdf"}
 
 1. Open the worksheet.
@@ -56,6 +66,7 @@ columns, a bundled image, and speaker notes.
 
 # Wissenschaftliche Einordnung
 
+<!-- `.science` creates the science-slide treatment. -->
 ## Multimedia Learning {.science}
 
 Multimedia learning is not the accumulation of media. Text, image, and
@@ -83,9 +94,18 @@ Advance once for the first statement and a second time for the centred
 quotation.
 :::
 
+<!-- An empty `.pause` heading creates the pause slide. -->
 ## {.pause}
 
 # Transfer
+
+## Source and automatic slides
+
+The [source of this example deck](https://github.com/PHBern-RConrardy/phbern-is1/blob/main/examples/slides.qmd)
+contains comments beside each PHBern-specific pattern.
+
+The format appends **Rechtliches** and **Literatur** automatically. Add
+citations such as [@mayer2021], but do not add headings for these final slides.
 
 ## Nächster Schritt {.uebung}
 

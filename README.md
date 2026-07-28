@@ -7,14 +7,14 @@ PDF handouts, Word documents, and PowerPoint presentations. The extension is
 maintained from the concrete publishing patterns used in the `PPD_1` and
 `PPD_2` course projects.
 
-The extension defaults to Swiss German metadata (`de-CH`), Arial-based
-typography, PHBern colours and templates, and an APA citation style.
+The extension defaults to Swiss German metadata (`de-CH`), PHBern typography,
+colours and templates, and an APA citation style.
 
 ## Formats
 
 | Format | Best suited for | Extension-specific behaviour |
 |---|---|---|
-| `phbern-html` | Course pages and web documents | PHBern colours, Arial typography, table of contents |
+| `phbern-html` | Course pages and web documents | PHBern colours, typography, table of contents |
 | `phbern-revealjs` | Teaching presentations | Branded title slide, semantic activity/science/pause slides, Padlet and worksheet links, bundled illustrations, legal and literature slides |
 | `phbern-typst` | PDF handouts, readers, assignments | PHBern A4 header, numbered headings, tables, APA references, public website links, lock marker for protected resources |
 | `phbern-docx` | Editable Word handouts | PHBern reference document and public website links |
@@ -35,7 +35,8 @@ GitHub Pages:
 ## Requirements
 
 - Quarto `1.4.11` or newer
-- Arial installed for the closest match to the PHBern templates
+- Liberation Sans, which is available on standard Linux runners and provides
+  consistent PDF output locally and on GitHub Pages
 - The bundled central bibliography for existing PHBern course citations, or
   an additional project bibliography declared with `bibliography`
 

@@ -5,6 +5,9 @@ author: "Team Digitalität"
 format: phbern-pptx
 ---
 
+<!-- `phbern-pptx` maps level-one headings to sections and level-two headings
+to content-slide layouts in the bundled reference deck. -->
+
 # Structure
 
 ## Purpose
@@ -45,3 +48,10 @@ format: phbern-pptx
 2. Confirm fonts and image placement.
 3. Add alt text where PowerPoint did not preserve it.
 4. Run the accessibility checker.
+
+## Source and automatic elements
+
+The [source of this PowerPoint example](https://github.com/PHBern-RConrardy/phbern-is1/blob/main/examples/powerpoint.qmd)
+uses ordinary headings, lists, and Quarto columns. The PHBern PowerPoint
+layouts come from the bundled `reference.pptx`; Reveal.js classes do not carry
+over to editable PowerPoint slides.

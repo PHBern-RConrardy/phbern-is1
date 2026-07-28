@@ -7,6 +7,10 @@ bibliography: library.bib
 reference-section-title: Literatur
 ---
 
+<!-- `phbern-docx` applies the bundled Word reference document. The bibliography
+heading is generated from `reference-section-title`; do not add `# Literatur`
+to the document body. -->
+
 # Purpose
 
 Use the Word format when colleagues need to revise the result without Quarto.
@@ -25,4 +29,8 @@ absolute website link because `_quarto.yml` defines `website.site-url`.
 - Keep tables simple enough for Word.
 - Add citations through the bibliography [@mayer2021].
 
-# Literatur
+::: {.callout-note title="Source and automatic elements"}
+The [source of this Word example](https://github.com/PHBern-RConrardy/phbern-is1/blob/main/examples/word.qmd)
+uses ordinary headings, lists, links, and citations. `phbern-docx` supplies the
+Word styles and automatically generates the **Literatur** heading.
+:::

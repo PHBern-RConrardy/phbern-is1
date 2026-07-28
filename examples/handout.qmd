@@ -11,6 +11,11 @@ bibliography: library.bib
 reference-section-title: Literatur
 ---
 
+<!-- The format supplies the PHBern header, Liberation Sans, heading numbering,
+and bibliography. Use ordinary Quarto Markdown; raw Typst is only needed for
+an operation such as this explicit page break. Do not add a `# Literatur`
+heading: citeproc inserts it automatically. -->
+
 # Einleitung
 
 This handout demonstrates the PHBern page header, hierarchy, callouts, tables,
@@ -60,4 +65,8 @@ should manage cognitive processing rather than simply add media
 | Interaction | What should learners think or produce? |
 | Link | Will the target remain reachable after export? |
 
-# Literatur
+::: {.callout-note title="Source and automatic elements"}
+The [source of this PDF example](https://github.com/PHBern-RConrardy/phbern-is1/blob/main/examples/handout.qmd)
+shows the Markdown used for each element. The PHBern header, font, table of
+contents, and bibliography heading are supplied by `phbern-typst`.
+:::

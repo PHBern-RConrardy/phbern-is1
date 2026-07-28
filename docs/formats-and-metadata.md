@@ -2,6 +2,25 @@
 
 ## Shared defaults
 
+## What you write vs. what the format adds
+
+The examples use ordinary Quarto Markdown wherever possible. The format adds
+the visual system and output-specific behaviour; it is not necessary to repeat
+those settings in every document.
+
+| Output | Write in the `.qmd` source | Added automatically by the format |
+|---|---|---|
+| HTML | headings, lists, callouts, tables, citations | PHBern theme, typography, table of contents, reference list |
+| Reveal.js | heading attributes and classes such as `.uebung`, `.science`, `.padlet`, `.paper` | title background, logo, semantic styling, Padlet/worksheet decorations, legal and literature slides |
+| PDF | headings, callouts, tables, citations, ordinary relative links | header, Liberation Sans, heading numbering, public-link conversion, lock marker, bibliography heading |
+| DOCX | headings, lists, tables, citations | bundled Word styles, public-link conversion, bibliography heading |
+| PPTX | level-one and level-two headings, lists, images, Quarto columns | bundled PowerPoint layouts and slide mapping |
+
+Every example source contains comments explaining its extension-specific
+markup. Use the source links displayed in the rendered examples to compare the
+markup with the output. Do not manually add `# Literatur` or `# References`:
+citeproc generates the bibliography heading.
+
 All PHBern formats inherit these defaults:
 
 | Metadata | Default |
@@ -31,7 +50,7 @@ Use for course pages and web-native documents.
 Defaults:
 
 - Cosmo plus the PHBern SCSS theme;
-- Arial/Helvetica/Liberation Sans font stack;
+- PHBern typography with browser-safe sans-serif fallbacks;
 - PHBern bordeaux links and accents;
 - table of contents enabled;
 - sections not numbered.
@@ -68,7 +87,7 @@ assessment descriptions.
 Defaults:
 
 - A4 paper;
-- 10.5 pt Arial;
+- 10.5 pt Liberation Sans;
 - PHBern institutional header;
 - numbered headings;
 - optional table of contents;

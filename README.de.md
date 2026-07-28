@@ -8,14 +8,13 @@ basiert auf konkreten Veröffentlichungsmustern aus den Kursprojekten `PPD_1`
 und `PPD_2`.
 
 Standardmässig verwendet die Erweiterung Schweizer Deutsch (`de-CH`),
-Arial-basierte Typografie, PHBern-Farben und -Vorlagen sowie einen
-APA-Zitierstil.
+PHBern-Typografie, Farben und Vorlagen sowie einen APA-Zitierstil.
 
 ## Formate
 
 | Format | Geeignet für | Erweiterungsspezifisches Verhalten |
 |---|---|---|
-| `phbern-html` | Kursseiten und Webdokumente | PHBern-Farben, Arial-Typografie, Inhaltsverzeichnis |
+| `phbern-html` | Kursseiten und Webdokumente | PHBern-Farben, Typografie, Inhaltsverzeichnis |
 | `phbern-revealjs` | Lehrpräsentationen | Gestaltete Titelfolie, semantische Aktivitäts-, Wissenschafts- und Pausenfolien, Padlet- und Arbeitsblattlinks, mitgelieferte Illustrationen sowie Rechts- und Literaturfolien |
 | `phbern-typst` | PDF-Handouts, Reader und Aufträge | PHBern-A4-Kopf, nummerierte Überschriften, Tabellen, APA-Literaturverzeichnis, Links zur öffentlichen Website und Schloss-Symbol für geschützte Ressourcen |
 | `phbern-docx` | Bearbeitbare Word-Handouts | PHBern-Referenzdokument und Links zur öffentlichen Website |
@@ -36,7 +35,8 @@ GitHub Pages veröffentlicht ist:
 ## Voraussetzungen
 
 - Quarto `1.4.11` oder neuer
-- Arial für die bestmögliche Übereinstimmung mit den PHBern-Vorlagen
+- Liberation Sans, damit PDFs lokal und auf GitHub Pages einheitlich gerendert
+  werden
 - Die mitgelieferte zentrale Bibliografie für bestehende PHBern-Kurszitate
   oder eine zusätzliche Projektbibliografie über `bibliography`
 
