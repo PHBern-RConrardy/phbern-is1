@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - examples/index.qmd
+    - examples/slides.qmd
+    - examples/handout.qmd
+    - examples/word.qmd
+    - examples/powerpoint.qmd
+  resources:
+    - resources_free/**
+    - resources_non_free/**
+
+website:
+  title: "PHBern Quarto extension examples"
+  site-url: "https://example.pages.dev"
+
+institut: Sekundarstufe II
+
+format:
+  phbern-html:
+    toc: true

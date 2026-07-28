@@ -1,0 +1,38 @@
+---
+title: "PHBern HTML example"
+subtitle: "Course page"
+author: "Team Digitalität"
+format: phbern-html
+bibliography: library.bib
+---
+
+# Purpose
+
+This page demonstrates the PHBern HTML theme: typography, bordeaux accents,
+headings, links, tables, callouts, and citations.
+
+::: {.callout-tip title="Best practice"}
+Keep the project-wide website address in `_quarto.yml`. Documents exported to
+PDF or Word can then link back to the published course site.
+:::
+
+## Course materials
+
+- [Free example resource](../resources_free/example-resource.md)
+- [Protected example resource](../resources_non_free/example-reading.md)
+- [PHBern](https://www.phbern.ch/)
+
+## Structured information
+
+| Deliverable | Recommended format |
+|---|---|
+| Course page | `phbern-html` |
+| Teaching slides | `phbern-revealjs` |
+| PDF handout | `phbern-typst` |
+| Editable handout | `phbern-docx` |
+| Editable slides | `phbern-pptx` |
+
+Multimedia learning depends on design decisions, not on media quantity alone
+[@mayer2021].
+
+# References

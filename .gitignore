@@ -1,0 +1,25 @@
+.DS_Store
+**/.DS_Store
+.quarto/
+**/.quarto/
+_site/
+/site_libs/
+
+# Rendered examples
+examples/*.docx
+examples/*.html
+examples/*.pdf
+examples/*.pptx
+examples/*.typ
+examples/*_files/
+
+# Rendered starter document
+/template.docx
+/template.html
+/template.pdf
+/template.pptx
+/template.typ
+/template_files/
+
+/.quarto/
+**/*.quarto_ipynb

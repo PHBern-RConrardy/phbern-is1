@@ -1,0 +1,31 @@
+---
+title: "PHBern Dokument"
+subtitle: "Kopierbare Minimalvorlage"
+author: "Vorname Name"
+institut: "Sekundarstufe II"
+format: phbern-typst
+toc: true
+bibliography: examples/library.bib
+---
+
+# Einleitung
+
+Dieses Dokument verwendet das PHBern-Format für Typst/PDF.
+
+::: {.callout-tip title="Hinweis"}
+Ersetzen Sie Titel, Autor:in und Inhalt. Legen Sie Ihre Literatur in einer
+projektweiten `library.bib` ab.
+:::
+
+# Inhalt
+
+Quarto-Markdown, Tabellen, Abbildungen und Literaturverweise können wie
+gewohnt verwendet werden [@mayer2021].
+
+| Element | Empfehlung |
+|---|---|
+| Überschriften | kurz und hierarchisch |
+| Abbildungen | immer mit Alternativtext |
+| Literatur | über BibTeX-Schlüssel zitieren |
+
+# Literatur

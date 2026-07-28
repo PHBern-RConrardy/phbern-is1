@@ -1,0 +1,63 @@
+---
+title: "Vorbereitungsauftrag"
+subtitle: "PHBern Typst/PDF example"
+author: "Team Digitalität, Institut Sekundarstufe II"
+institut: "Sekundarstufe II"
+format:
+  phbern-typst:
+    keep-typ: true
+toc: true
+bibliography: library.bib
+reference-section-title: Literatur
+---
+
+# Einleitung
+
+This handout demonstrates the PHBern page header, hierarchy, callouts, tables,
+citations, cross-format website links, and the protected-resource marker.
+
+::: {.callout-tip title="Zeitbudget"}
+Plan approximately 30 minutes for this compact example.
+:::
+
+# Auftrag
+
+## Analyse
+
+Read the short [free example resource](../resources_free/example-resource.md)
+and compare it with the
+[protected example resource](../resources_non_free/example-reading.md).
+
+The rendered PDF turns both relative paths into links under the
+`website.site-url` configured in `_quarto.yml`. The protected link also
+receives a lock marker.
+
+## Fragen
+
+1. Which information belongs in a course website?
+2. Which information should remain in a protected institutional system?
+3. How would you explain the difference to students?
+
+::: {.callout-important title="Grundsatz"}
+A visual lock marker communicates restricted intent; access control must be
+implemented by the publishing platform.
+:::
+
+```{=typst}
+#pagebreak()
+```
+
+# Evidence-informed design
+
+Use citations in the ordinary Quarto form. For example, multimedia design
+should manage cognitive processing rather than simply add media
+[@mayer2021].
+
+| Decision | Question |
+|---|---|
+| Text | Is every sentence needed for the task? |
+| Image | Does it explain, orient, or motivate? |
+| Interaction | What should learners think or produce? |
+| Link | Will the target remain reachable after export? |
+
+# Literatur

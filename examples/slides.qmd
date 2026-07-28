@@ -1,0 +1,98 @@
+---
+title: "PHBern Reveal.js"
+subtitle: "Extension-specific slide patterns"
+author: "Team Digitalität, Institut Sekundarstufe II"
+format: phbern-revealjs
+bibliography: library.bib
+---
+
+# Einstieg
+
+## Ziele
+
+- PHBern slide types distinguish instructional intent.
+- Speaker notes separate facilitation from visible content.
+- Bundled illustrations support consistent visual language.
+
+::: {.notes}
+Briefly explain that the examples mirror recurring patterns in PPD_1 and
+PPD_2. Open speaker view with the S key.
+:::
+
+## Kennenlernen {.uebung .padlet data-padlet-url="padlet.com/phbern/example"}
+
+:::: {.columns style="align-items: center; min-height: 520px;"}
+
+::: {.column width="60%"}
+1. Introduce yourself to a partner.
+2. Name one useful digital teaching practice.
+3. Post one shared point to Padlet.
+:::
+
+::: {.column width="40%"}
+![](soco-st/493580_two-people-having-a-conversation.svg){
+  fig-alt="Zwei Personen im Gespräch"
+  style="max-height: 360px; width: auto;"
+}
+:::
+
+::::
+
+::: {.notes}
+This slide exercises the activity colour, Padlet decoration, generated URL,
+columns, a bundled image, and speaker notes.
+:::
+
+## Arbeitsauftrag {.uebung .paper data-paper-link="handout.pdf"}
+
+1. Open the worksheet.
+2. Read the example.
+3. Mark one decision you would change.
+
+## Diskussion {.uebung}
+
+- Which design choice supports learning?
+- Which choice is merely decorative?
+- What evidence would help decide?
+
+# Wissenschaftliche Einordnung
+
+## Multimedia Learning {.science}
+
+Multimedia learning is not the accumulation of media. Text, image, and
+explanation should support the learner's selection, organization, and
+integration of information [@mayer2021].
+
+## Kernaussage
+
+::: {.center-quote}
+Gestaltung folgt der didaktischen Absicht.
+:::
+
+## Schrittweise Argumentation
+
+::: {.fragment data-fragment-index="1"}
+First identify the learning objective.
+:::
+
+::: {.fragment .center-quote data-fragment-index="2"}
+Then choose the smallest useful media combination.
+:::
+
+::: {.notes}
+Advance once for the first statement and a second time for the centred
+quotation.
+:::
+
+## {.pause}
+
+# Transfer
+
+## Nächster Schritt {.uebung}
+
+Adapt one slide from your own deck:
+
+1. give it a semantic purpose;
+2. reduce visible text;
+3. add useful speaker notes;
+4. provide alternative text for images.

@@ -1,7 +1,3 @@
-#set bibliography(
-  style: "/_extensions/PHBern-RConrardy/phbern/assets/apa.csl",
-)
-
 #show <refs>: refs => {
   block(above: 6pt)[#refs]
 }

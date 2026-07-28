@@ -1,0 +1,47 @@
+---
+title: "Editable PHBern slides"
+subtitle: "PPTX example"
+author: "Team Digitalität"
+format: phbern-pptx
+---
+
+# Structure
+
+## Purpose
+
+- Use PowerPoint when downstream editing is required.
+- Prefer conventional slide structures.
+- Reserve Reveal.js-specific classes for browser presentations.
+
+## Two columns
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Source
+
+- Quarto Markdown
+- headings
+- lists
+- images
+:::
+
+::: {.column width="50%"}
+### Result
+
+- editable text
+- editable layouts
+- PHBern reference deck
+- familiar hand-off
+:::
+
+::::
+
+# Handover
+
+## Before sharing
+
+1. Open the `.pptx` in PowerPoint.
+2. Confirm fonts and image placement.
+3. Add alt text where PowerPoint did not preserve it.
+4. Run the accessibility checker.

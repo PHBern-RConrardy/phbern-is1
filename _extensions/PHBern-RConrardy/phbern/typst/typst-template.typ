@@ -35,7 +35,7 @@
     ]
 
     #place(top + right, dy: -10pt)[
-      #image("/_extensions/PHBern-RConrardy/phbern/assets/Log_PHB_black.eps.svg", width: 70mm)
+      #image("$logo.path$", width: 70mm)
     ]
 
     #place(bottom + left)[

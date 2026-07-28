@@ -1,0 +1,28 @@
+---
+title: "Editable PHBern handout"
+subtitle: "DOCX example"
+author: "Team Digitalität"
+format: phbern-docx
+bibliography: library.bib
+reference-section-title: Literatur
+---
+
+# Purpose
+
+Use the Word format when colleagues need to revise the result without Quarto.
+The reference document supplies the PHBern Word styles.
+
+## Course link
+
+This relative link to the
+[free example resource](../resources_free/example-resource.md) becomes an
+absolute website link because `_quarto.yml` defines `website.site-url`.
+
+## Checklist
+
+- Use semantic headings.
+- Use real lists rather than typed dashes.
+- Keep tables simple enough for Word.
+- Add citations through the bibliography [@mayer2021].
+
+# Literatur

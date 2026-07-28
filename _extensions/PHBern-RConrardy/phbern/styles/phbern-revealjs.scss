@@ -1,4 +1,7 @@
 /*-- scss:defaults --*/
+$phbern-bordeaux: #ad0101 !default;
+$phbern-beige-light: #cdcc99 !default;
+$phbern-blue-mid: #6c94a8 !default;
 @import "phbern-colors";
 
 $font-family-sans-serif: Arial, Helvetica, "Liberation Sans", sans-serif !default;
@@ -200,39 +203,6 @@ body:has(.reveal .slides section.science.present) .reveal .slide-background.pres
   white-space: nowrap;
 }
 
-body:has(.reveal .slides section.science.present)
-  .reveal
-  .backgrounds
-  .slide-background.present
-  .slide-background-content {
-  background-image: url("../../../../_extensions/PHBern-RConrardy/phbern/assets/soco-st/493141_a-woman-doing-research-and-experiments.svg") !important;
-  background-repeat: no-repeat !important;
-  background-size: 200px auto !important;
-  background-position: right 10px top 10px !important;
-}
-
-body:has(.reveal .slides section.padlet.present)
-  .reveal
-  .backgrounds
-  .slide-background.present
-  .slide-background-content {
-  background-image: url("../../../../_extensions/PHBern-RConrardy/phbern/assets/padlet.svg") !important;
-  background-repeat: no-repeat !important;
-  background-size: 200px auto !important;
-  background-position: right 10px bottom 10px !important;
-}
-
-body:has(.reveal .slides section.paper.present)
-  .reveal
-  .backgrounds
-  .slide-background.present
-  .slide-background-content {
-  background-image: url("../../../../_extensions/PHBern-RConrardy/phbern/assets/soco-st/492851_notepad-and-pen.svg") !important;
-  background-repeat: no-repeat !important;
-  background-size: 200px auto !important;
-  background-position: right 10px bottom 10px !important;
-}
-
 .reveal .slides section.padlet .padlet-url,
 .reveal .slides section.paper .paper-link {
   position: absolute;
@@ -254,15 +224,4 @@ body:has(.reveal .slides section.paper.present)
 .reveal .slides section.paper .paper-link a {
   color: #000;
   text-decoration: none;
-}
-
-body:has(.reveal .slides section.pause.present)
-  .reveal
-  .backgrounds
-  .slide-background.present
-  .slide-background-content {
-  background-image: url("../../../../_extensions/PHBern-RConrardy/phbern/assets/soco-st/492849_clock.svg") !important;
-  background-repeat: no-repeat !important;
-  background-size: auto 100% !important;
-  background-position: center center !important;
 }
