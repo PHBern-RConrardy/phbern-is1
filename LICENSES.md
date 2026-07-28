@@ -8,24 +8,27 @@ conditions.
 The illustrations in
 `_extensions/PHBern-RConrardy/phbern/assets/soco-st/` are distributed with
 their own [`LICENSE.txt`](_extensions/PHBern-RConrardy/phbern/assets/soco-st/LICENSE.txt).
-Keep that file and the attribution when redistributing the illustrations.
+They are marked as **CC BY** by SVG Repo, with Soco St as the named author;
+the bundled notice does not specify a licence version. Keep that file and the
+attribution “Soco St via SVG Repo” when redistributing the illustrations.
 
 The Reveal.js format automatically adds a legal slide with attribution for
 these images.
 
-## PHBern identity assets and templates
+## PHBern logo
 
-PHBern logos, presentation backgrounds, Word reference documents, and
-PowerPoint reference decks are institutional assets. Their presence in this
-repository does not by itself grant unrestricted reuse outside the intended
-PHBern context.
+The PHBern logo assets are institutional identity assets. Their presence in
+this repository does not by itself grant unrestricted reuse outside the
+intended PHBern context.
 
 ## Extension source
 
-No project-wide open-source licence has been declared yet. Until the
-maintainer or rights holder adds one, ordinary copyright rules apply to the
-extension source code and documentation.
+The PHBern Quarto extension source code and the original documentation and
+examples in this repository are licensed under the
+[Creative Commons Attribution-ShareAlike 4.0 International
+licence](LICENSE-CC-BY-SA-4.0.md) (`CC BY-SA 4.0`).
 
-Before publishing the repository for general reuse, choose an explicit
-project licence and confirm that it is compatible with the institutional and
-third-party assets above.
+You may share and adapt that material with attribution, an indication of
+changes, and distribution of adaptations under the same licence. The licence
+does not override the separate conditions for institutional and third-party
+assets described above.

@@ -32,7 +32,6 @@ PPD_2. Open speaker view with the S key.
 ::: {.column width="40%"}
 ![](soco-st/493580_two-people-having-a-conversation.svg){
   fig-alt="Zwei Personen im Gespräch"
-  style="max-height: 360px; width: auto;"
 }
 :::
 

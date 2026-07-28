@@ -1,5 +1,7 @@
 # PHBern Quarto extension
 
+[English](README.md) | [Deutsch](README.de.md)
+
 Branded Quarto formats for PHBern course websites, Reveal.js presentations,
 PDF handouts, Word documents, and PowerPoint presentations. The extension is
 maintained from the concrete publishing patterns used in the `PPD_1` and
@@ -18,13 +20,17 @@ typography, PHBern colours and templates, and an APA citation style.
 | `phbern-docx` | Editable Word handouts | PHBern reference document and public website links |
 | `phbern-pptx` | Editable PowerPoint slides | PHBern reference deck and predictable Pandoc slide layouts |
 
-The examples under [`examples/`](examples/) are intentionally separate:
+The examples under [`examples/`](examples/) are intentionally separate. The
+rendered links become available after the `_site/` folder is published with
+GitHub Pages:
 
-- [`index.qmd`](examples/index.qmd) — branded HTML
-- [`slides.qmd`](examples/slides.qmd) — every PHBern Reveal.js slide type
-- [`handout.qmd`](examples/handout.qmd) — Typst/PDF handout with citations and resource links
-- [`word.qmd`](examples/word.qmd) — editable Word document
-- [`powerpoint.qmd`](examples/powerpoint.qmd) — editable PowerPoint deck
+| Use case | Source | Rendered example |
+|---|---|---|
+| Branded HTML | [`index.qmd`](examples/index.qmd) | [Open HTML](https://phbern-rconrardy.github.io/phbern-is1/examples/) |
+| Reveal.js slide types | [`slides.qmd`](examples/slides.qmd) | [Open slides](https://phbern-rconrardy.github.io/phbern-is1/examples/slides.html) |
+| Typst/PDF handout | [`handout.qmd`](examples/handout.qmd) | [Open PDF](https://phbern-rconrardy.github.io/phbern-is1/examples/handout.pdf) |
+| Editable Word document | [`word.qmd`](examples/word.qmd) | [Download DOCX](https://phbern-rconrardy.github.io/phbern-is1/examples/word.docx) |
+| Editable PowerPoint deck | [`powerpoint.qmd`](examples/powerpoint.qmd) | [Download PPTX](https://phbern-rconrardy.github.io/phbern-is1/examples/powerpoint.pptx) |
 
 ## Requirements
 
@@ -189,7 +195,6 @@ Within `phbern-revealjs`, use the short `soco-st/` path:
 ```markdown
 ![](soco-st/493141_a-woman-doing-research-and-experiments.svg){
   fig-alt="Forscherin mit Laborgeräten"
-  style="max-height: 360px; width: auto;"
 }
 ```
 
@@ -275,12 +280,18 @@ by their canonical layout roles.
 
 ## Assets and licensing
 
+The extension source code and the original documentation and examples are
+licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 The Soco St illustrations under
 `_extensions/PHBern-RConrardy/phbern/assets/soco-st/` retain their bundled
-license and attribution file. PHBern logos and Office templates are
-institutional assets.
+licence and attribution file. SVG Repo marks them as **CC BY**, with Soco St
+as the named author; the bundled notice does not specify a licence version.
+Keep the attribution “Soco St via SVG Repo”. The PHBern logo is an
+institutional identity asset.
 
-This repository currently has no project-wide open-source licence. Do not
-assume that the code, PHBern identity assets, and third-party illustrations
-share one licence. See [`LICENSES.md`](LICENSES.md) before redistributing or
+The CC BY-SA 4.0 licence does not apply to those separately identified
+materials. See [`LICENSES.md`](LICENSES.md) and
+[`LICENSE-CC-BY-SA-4.0.md`](LICENSE-CC-BY-SA-4.0.md) before redistributing or
 republishing the extension.

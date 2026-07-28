@@ -142,7 +142,6 @@ with `soco-st/`:
 ```markdown
 ![](soco-st/493580_two-people-having-a-conversation.svg){
   fig-alt="Zwei Personen im Gespräch"
-  style="max-height: 390px; width: auto;"
 }
 ```
 
@@ -233,7 +232,8 @@ Columns remain easier to maintain for most instructional slides.
 
 The filter always appends:
 
-1. **Rechtliches**, including Soco St and slide-licence information;
+1. **Rechtliches**, including the CC BY attribution “Soco St via SVG Repo”
+   and slide-licence information;
 2. **Literatur**, containing the document bibliography.
 
 Use ordinary citations in slide content:
