@@ -47,8 +47,8 @@ local function add_semantic_background(header)
     set_background(
       header,
       "soco-st/492851_notepad-and-pen.svg",
-      "200px auto",
-      "right 10px bottom 10px"
+      "170px auto",
+      "right 10px bottom 44px"
     )
     return true
   elseif has_class(header, "pause") then
@@ -100,14 +100,14 @@ function Header(header)
 
   if padlet_url then
     link = pandoc.Link(
-      padlet_url,
+      pandoc.Inlines(padlet_url),
       with_scheme(padlet_url),
       "",
       pandoc.Attr("", {}, { target = "_blank", rel = "noopener noreferrer" })
     )
     div_class = "padlet-url"
   else
-    link = pandoc.Link("Übungsblatt", paper_link)
+    link = pandoc.Link(pandoc.Inlines("Übungsblatt"), paper_link)
     div_class = "paper-link"
   end
 
@@ -139,7 +139,7 @@ function Pandoc(doc)
 
   table.insert(
     doc.blocks,
-    pandoc.Header(2, "Literatur", pandoc.Attr("", { "smaller", "scrollable" }, {}))
+    pandoc.Header(2, pandoc.Inlines("Literatur"), pandoc.Attr("", { "smaller", "scrollable" }, {}))
   )
 
   table.insert(

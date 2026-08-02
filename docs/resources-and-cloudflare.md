@@ -59,10 +59,20 @@ The extension bundles optional middleware:
 ```text
 _extensions/PHBern-RConrardy/phbern/cloudflare/
 ├── allowed-ip-ranges.csv
-└── restricted-resources.js
+├── restricted-resources.js
+├── _routes.json
+└── functions/
+    └── _middleware.js
 ```
 
-Copy this small wrapper to `functions/_middleware.js`:
+The extension's `_routes.json` and `functions/_middleware.js` are canonical
+templates. Copy them into the course project when enabling protection:
+
+- copy `cloudflare/_routes.json` to the project root as `_routes.json`;
+- copy `cloudflare/functions/_middleware.js` to the project root as
+  `functions/_middleware.js`.
+
+The wrapper then looks like this:
 
 ```js
 import { createRestrictedResourcesMiddleware } from "../_extensions/PHBern-RConrardy/phbern/cloudflare/restricted-resources.js";
