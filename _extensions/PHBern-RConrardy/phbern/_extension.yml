@@ -45,6 +45,7 @@ contributes:
       resources:
         - assets/padlet.svg
         - assets/soco-st/
+        - assets/logos/
     typst:
       citeproc: true
       papersize: a4

@@ -105,7 +105,7 @@ if toc {
   // Numbered headings:
   // 1      Heading 1
   // 1.1    Heading 2
-  // 1.1.1  Heading 3
+  // 1.1.1  Heading 3 and deeper levels
   set heading(numbering: "1.1")
 
   let numbered-heading(size: 10pt, above: 10pt, below: 6pt, number-width: 17mm) = it => {
@@ -153,6 +153,20 @@ if toc {
     size: 10pt,
     above: 12pt,
     below: 7pt,
+    number-width: 17mm,
+  )
+
+  show heading.where(level: 4): numbered-heading(
+    size: 10pt,
+    above: 10pt,
+    below: 6pt,
+    number-width: 17mm,
+  )
+
+  show heading.where(level: 5): numbered-heading(
+    size: 10pt,
+    above: 8pt,
+    below: 5pt,
     number-width: 17mm,
   )
 
