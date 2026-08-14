@@ -56,6 +56,19 @@ body:has(#title-slide.present) .reveal .slide-number {
   margin: 30px 0 14px 0;
 }
 
+/* Keep PHBern heading sizes when Quarto's .smaller reduces slide content. */
+.reveal .slides section.smaller h1 {
+  font-size: calc(1.5em / 0.7) !important;
+}
+
+.reveal .slides section.smaller h2 {
+  font-size: calc(1.3em / 0.7);
+}
+
+.reveal .slides section.smaller h3 {
+  font-size: calc(1em / 0.7);
+}
+
 .reveal ul {
   margin-left: 1.1em;
 }
@@ -94,6 +107,20 @@ body:has(#title-slide.present) .reveal .slide-number {
   margin: 0;
   font-size: 18px;
   font-weight: 700 !important;
+}
+
+/* Quarto renders several authors as adjacent blocks; separate them visibly. */
+#title-slide .quarto-title-author {
+  /* Avoid the whitespace text node Quarto leaves after each name. */
+  font-size: 0;
+}
+
+#title-slide .quarto-title-author-name {
+  font-size: 18px;
+}
+
+#title-slide .quarto-title-author:not(:last-child) .quarto-title-author-name::after {
+  content: ",\00a0";
 }
 
 .reveal section.section-title,
