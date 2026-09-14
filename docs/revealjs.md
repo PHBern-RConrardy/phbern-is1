@@ -248,3 +248,15 @@ Set `bibliography` to a file that is reachable from the project root.
 
 See [`../examples/slides.qmd`](../examples/slides.qmd) for a single deck that
 exercises all extension-specific slide types.
+
+## PDF export
+
+Press `E` to switch to Reveal's print view, then save as PDF from Chrome's
+print dialog with background graphics enabled and browser headers/footers
+disabled. The centered 16:9 frame and black outer margins apply only to the
+screen presentation, not the print view.
+
+The filter assigns native `data-background-color` values to `.science`
+(light blue) and `.uebung` (beige) slides. Explicit background colors take
+precedence. Each PDF page therefore keeps its own color independently of
+the active slide. The title logo and page numbers use print-specific rules.
