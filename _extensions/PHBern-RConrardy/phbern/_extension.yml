@@ -72,3 +72,5 @@ contributes:
       reference-doc: reference.pptx
       slide-level: 2
       toc: false
+      filters:
+        - pptx-soco-st.lua
