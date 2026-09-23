@@ -57,4 +57,9 @@ def fit(path):
 
 
 if __name__ == "__main__":
-    fit(Path(sys.argv[1]))
+    target = Path(sys.argv[1])
+    if target.is_dir():
+        for presentation in target.rglob("*.pptx"):
+            fit(presentation)
+    else:
+        fit(target)
