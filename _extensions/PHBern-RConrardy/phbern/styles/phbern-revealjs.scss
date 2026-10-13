@@ -12,6 +12,62 @@ $presentation-title-slide-text-align: left !default;
 $link-color: $phbern-bordeaux !default;
 
 /*-- scss:rules --*/
++
+/* Warm tab treatment for beige exercise and science slides. */
+.reveal .slides section.uebung .panel-tabset,
+.reveal .slides section.science .panel-tabset {
+  color: #4f3d2f;
+}
+
+.reveal .slides section.uebung .panel-tabset-tabby,
+.reveal .slides section.science .panel-tabset-tabby {
+  display: flex;
+  gap: 0.35em;
+  margin: 0 0 0.2em 0;
+  padding: 0;
+  border-bottom: 3px solid #8f7a62;
+  list-style: none;
+}
+
+.reveal .slides section.uebung .panel-tabset-tabby li a,
+.reveal .slides section.science .panel-tabset-tabby li a {
+  display: block;
+  padding: 0.3em 0.75em;
+  border: 2px solid #8f7a62;
+  border-bottom: 0;
+  border-radius: 0.45em 0.45em 0 0;
+  background: rgba(255, 255, 255, 0.42);
+  color: #4f3d2f;
+  font-size: 0.68em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reveal .slides section.uebung .panel-tabset-tabby li.active a,
+.reveal .slides section.uebung .panel-tabset-tabby li a.active,
+.reveal .slides section.uebung .panel-tabset-tabby li a[aria-selected="true"],
+.reveal .slides section.science .panel-tabset-tabby li.active a,
+.reveal .slides section.science .panel-tabset-tabby li a.active,
+.reveal .slides section.science .panel-tabset-tabby li a[aria-selected="true"] {
+  background: #8f7a62;
+  color: #fffaf0;
+}
+
+.reveal .slides section.uebung .panel-tabset .tab-content,
+.reveal .slides section.science .panel-tabset .tab-content {
+  padding: 0.55em 0.8em 0.7em;
+  border: 2px solid #8f7a62;
+  border-top: 0;
+  background: rgba(255, 250, 240, 0.42);
+}
+
+.reveal .slides section.uebung .panel-tabset .tab-content p:first-child,
+.reveal .slides section.science .panel-tabset .tab-content p:first-child {
+  margin-top: 0;
+  font-size: 0.72em;
+  font-weight: 700;
+}
+
 
 @media screen {
 /* Keep the complete presentation in a centered 16:9 frame. */

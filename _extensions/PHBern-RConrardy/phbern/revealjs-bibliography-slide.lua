@@ -36,7 +36,7 @@ local function add_semantic_background(header)
     set_background(
       header,
       "soco-st/493141_a-woman-doing-research-and-experiments.svg",
-      "200px auto",
+      "120px auto",
       "right 10px top 10px"
     )
     return true
@@ -76,7 +76,7 @@ local function with_scheme(url)
 end
 
 function Image(image)
-  if image.src:match("^soco%-st/") then
+  if image.src:match("^soco%-st/") or image.src:match("^logos/") then
     image.src = extension_asset_path(image.src)
     return image
   end
