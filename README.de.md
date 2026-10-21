@@ -44,6 +44,14 @@ Das Repository wird mit der von den Verantwortlichen verwendeten Quarto-Version
 getestet. Die Erweiterung enthält ihre zentrale Bibliografie, den CSL-Stil,
 Office-Referenzdokumente, Logo, Folienhintergründe und Soco-St-Illustrationen.
 
+Für automatische Folien-PDFs bei `quarto render` aktivieren Sie den
+mitgelieferten Post-Render-Hook und installieren einmalig Quartos optionale
+Chrome Headless Shell mit `quarto install chrome-headless-shell` (Quarto ab
+Version 1.9). Node.js, npm und DeckTape werden dafür nicht benötigt. Details stehen unter
+[Automatic slide PDF export](docs/revealjs.md#automatic-slide-pdf-export)
+(Englisch). Für die Beispiele ist der Hook bereits aktiviert; die Installation
+des Formats allein aktiviert ihn nicht in anderen Projekten.
+
 ## Installation
 
 Führen Sie im Stammverzeichnis eines Quarto-Projekts aus:

@@ -39,6 +39,86 @@ format:
     slide-number: c/t
 ```
 
+## Automatic slide PDF export
+
+The bundled `export-pdf.ts` hook uses Quarto's own Deno runtime and Quarto's
+optional **Chrome Headless Shell**. It does not depend on Node.js, npm or
+DeckTape. It produces `slides.pdf` beside `slides.html`, with no additional
+console output on success. Errors appear as a single exporter error in the
+terminal. The hook never launches desktop Chrome, Edge or a personal browser
+profile, and never installs software automatically.
+
+### One-time setup
+
+With Quarto 1.9 or newer, install the optional headless component once on each
+rendering machine:
+
+```bash
+quarto install chrome-headless-shell
+```
+
+This is a separate download managed by Quarto, not part of the default Quarto
+installation. The exporter locates it in Quarto's platform-specific data
+folder on macOS, Windows and Linux. If it is missing, PDF export stops with
+installation instructions; there is no fallback to a desktop browser.
+
+### Enable in each course
+
+Update the extension and merge this hook into the course's `_quarto.yml`:
+
+```yaml
+project:
+  post-render:
+    - _extensions/PHBern-RConrardy/phbern/export-pdf.ts
+
+website:
+  site-url: https://example.org/my-course
+```
+
+Keep existing post-render hooks in the list. Quarto automatically runs `.ts`
+project scripts using its bundled runtime. Installing the format alone does
+not activate a project hook; it is already enabled for this repository's
+examples. GitHub Actions installs the same headless component during setup.
+
+Then use `quarto render` or `quarto render examples/slides.qmd` as usual.
+Only Reveal.js presentations in the current render outputs are exported.
+
+### PDF behaviour
+
+- The exporter uses Reveal's `?print-pdf` layout. It waits for Reveal's PDF
+  pages, fonts and inline images before printing. Visual fidelity still needs
+  checking against the actual deck because print CSS can differ from screen CSS.
+- The Reveal canvas sets the page size. Fragment contents appear together,
+  with at most one PDF page per slide. Long content must fit the slide canvas.
+- Normal hyperlinks remain PDF links. Relative links are resolved against
+  `website.site-url` and the original output path. Fragment links open the
+  corresponding online slide, rather than jumping between PDF pages.
+- Animations, video and JavaScript interactions are static in the PDF.
+- A disposable browser profile keeps the personal profile separate. Temporary
+  files are removed, and an existing PDF is retained if generation fails.
+
+The headless shell has no normal browser interface. An OS crash or security
+alert cannot be ruled out for any executable; the exporter does not suppress
+OS diagnostics or weaken browser protections. Windows and Linux path handling
+is implemented but requires testing on those operating systems.
+
+### Manual export and configuration
+
+Export all already-rendered decks without rendering the project again:
+
+```bash
+quarto run _extensions/PHBern-RConrardy/phbern/export-pdf.ts --all
+```
+
+| Environment variable | Purpose |
+|---|---|
+| `PHBERN_HEADLESS_PATH` | Explicit path to a `chrome-headless-shell` or `headless_shell` executable |
+| `PHBERN_SLIDES_PDF=0` | Skip slide PDF generation for a render |
+
+A Quarto project is required for automatic post-render hooks. This exporter
+replaces the earlier experimental DeckTape hook; existing DeckTape or Puppeteer
+installations are not used or automatically removed.
+
 ## Slide hierarchy
 
 Level-one headings create section slides:
