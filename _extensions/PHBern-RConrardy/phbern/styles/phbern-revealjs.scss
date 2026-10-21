@@ -252,6 +252,9 @@ html:not(.print-pdf) body:has(#title-slide.present) .reveal .slide-logo {
   right: 0.75% !important;
   max-height: none !important;
   height: auto !important;
+  aspect-ratio: 261.10666 / 117.77333 !important;
+  object-fit: contain !important;
+  object-position: right top !important;
 
 }
 
@@ -269,16 +272,18 @@ html.print-pdf .pdf-page:has(#title-slide) .slide-number-pdf {
   display: none !important;
 }
 html.print-pdf .reveal .slide-logo {
-  display: none !important;
-}
-html.print-pdf .pdf-page:has(#title-slide)::after {
-  content: "";
+  display: block !important;
   position: absolute;
   top: 12px;
   right: 12px;
   width: 400px;
-  height: 110px;
-  background: var(--phbern-print-logo) right top / contain no-repeat;
+  height: auto !important;
+  max-height: none !important;
+  left: auto !important;
+  bottom: auto !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: right top !important;
 }
 @media print {
   html, body, .reveal {

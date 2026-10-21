@@ -40,7 +40,7 @@ contributes:
         data-background-position: center
         data-background-repeat: no-repeat
       date-format: "DD.MM.YYYY"
-      logo: assets/Log_PHB_black.eps.svg
+      logo: assets/Log_PHB_black ohne Byline.eps.svg
       bibliography: library.bib
       resources:
         - assets/padlet.svg
