@@ -27,6 +27,13 @@ The PHBern logo assets are institutional identity assets. Their presence in
 this repository does not by itself grant unrestricted reuse outside the
 intended PHBern context.
 
+## OpenAI logo
+
+`_extensions/PHBern-RConrardy/phbern/assets/logos/openai-2025-symbol.svg` is
+from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:OpenAI_logo_2025_(symbol).svg).
+The file is marked public domain as a simple logo, with a notice that trademark
+restrictions may still apply.
+
 ## Extension source
 
 The PHBern Quarto extension source code and the original documentation and
