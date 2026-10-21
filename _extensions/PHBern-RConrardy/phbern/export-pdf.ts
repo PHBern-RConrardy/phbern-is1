@@ -228,6 +228,16 @@ export async function main() {
                 a.setAttribute('href', new URL(href, base).href);
               }
             }
+            const firstBackground = document.querySelector('.backgrounds')?.firstElementChild;
+            if (firstBackground instanceof HTMLElement) {
+              firstBackground.style.backgroundSize = '100% 120%';
+              firstBackground.style.backgroundPosition = 'center top';
+              const content = firstBackground.querySelector('.slide-background-content');
+              if (content instanceof HTMLElement) {
+                content.style.backgroundSize = '100% 120%';
+                content.style.backgroundPosition = 'center top';
+              }
+            }
             await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
             return true;
           })()`, awaitPromise: true, returnByValue: true,

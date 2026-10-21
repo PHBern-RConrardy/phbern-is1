@@ -196,6 +196,16 @@ html:not(.print-pdf) body:has(#title-slide.present) .reveal .slide-number {
   font-size: 18px;
 }
 
+/* In the browser the title background is fitted to the live Reveal frame.
+   Chrome's print layout uses a slightly different scale, so keep the author
+   line above the decorative PHBern lettering in exported PDFs as well. */
+html.print-pdf #title-slide p.author,
+html.print-pdf #title-slide .author,
+html.print-pdf #title-slide .quarto-title-author,
+html.print-pdf #title-slide .quarto-title-author-name {
+  top: 450px;
+}
+
 #title-slide .quarto-title-author:not(:last-child) .quarto-title-author-name::after {
   content: ",\00a0";
 }
@@ -226,9 +236,15 @@ html:not(.print-pdf) body:has(#title-slide.present) .reveal .slide-number {
   box-shadow: none !important;
 }
 /* Force the first/title-slide background to fill the whole Reveal background layer */
-.reveal .backgrounds .slide-background:first-child .slide-background-content {
+html:not(.print-pdf) .reveal .backgrounds .slide-background:first-child .slide-background-content {
   background-size: cover !important;
   background-position: center 0% !important;
+  background-repeat: no-repeat !important;
+}
+html.print-pdf .reveal .backgrounds .slide-background:first-child,
+html.print-pdf .reveal .backgrounds .slide-background:first-child .slide-background-content {
+  background-size: 100% 100% !important;
+  background-position: center center !important;
   background-repeat: no-repeat !important;
 }
 
