@@ -202,7 +202,7 @@ export async function main() {
         while (Date.now() < deadline) {
           try {
             const state = await browser.client.send('Runtime.evaluate', {
-              expression: `location.href === ${JSON.stringify(url.href)} && document.readyState === 'complete' && !!window.Reveal && Reveal.isReady() && !!document.querySelector('.pdf-page')`,
+              expression: `document.readyState === 'complete' && !!window.Reveal && Reveal.isReady() && document.querySelectorAll('.reveal .slides section').length > 0`,
               returnByValue: true,
             }, 5000);
             if (state.result.value === true) { ready = true; break; }
