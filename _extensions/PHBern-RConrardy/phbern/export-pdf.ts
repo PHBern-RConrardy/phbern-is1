@@ -206,7 +206,7 @@ export async function main() {
         while (Date.now() < deadline) {
           try {
             const state = await browser.client.send('Runtime.evaluate', {
-              expression: `document.readyState === 'complete' && !!window.Reveal && Reveal.isReady() && document.querySelectorAll('.reveal .slides section').length > 0`,
+              expression: `document.readyState === 'complete' && !!window.Reveal && Reveal.isReady() && document.querySelectorAll('.pdf-page').length > 0 && !!document.querySelector('.pdf-page #title-slide')`,
               returnByValue: true,
             }, 5000);
             if (state.result.value === true) { ready = true; break; }
@@ -228,15 +228,16 @@ export async function main() {
                 a.setAttribute('href', new URL(href, base).href);
               }
             }
-            const firstBackground = document.querySelector('.backgrounds')?.firstElementChild;
-            if (firstBackground instanceof HTMLElement) {
-              firstBackground.style.backgroundSize = '100% 120%';
-              firstBackground.style.backgroundPosition = 'center top';
-              const content = firstBackground.querySelector('.slide-background-content');
-              if (content instanceof HTMLElement) {
-                content.style.backgroundSize = '100% 120%';
-                content.style.backgroundPosition = 'center top';
-              }
+            // The artwork is 3000 x 2083, but its lettering ends at row 1712.
+            // Preserve its proportions and align that visible edge to the page,
+            // rather than aligning the 371 white rows below it.
+            const titlePage = document.querySelector('.pdf-page:has(#title-slide)');
+            const content = titlePage?.querySelector('.slide-background-content');
+            if (content instanceof HTMLElement && content.style.backgroundImage.includes('slide_Image.png')) {
+              // Two pixels of bleed cover Chromium's fractional page rounding.
+              const top = content.clientHeight - content.clientWidth * 1712 / 3000 + 2;
+              content.style.setProperty('background-size', '100% auto', 'important');
+              content.style.setProperty('background-position', 'center ' + top + 'px', 'important');
             }
             await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
             return true;

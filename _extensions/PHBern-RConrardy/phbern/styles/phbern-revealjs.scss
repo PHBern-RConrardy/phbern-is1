@@ -247,11 +247,6 @@ html.print-pdf .reveal .backgrounds .slide-background:first-child .slide-backgro
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
-html.print-pdf .pdf-page:has(#title-slide) .slide-background,
-html.print-pdf .pdf-page:has(#title-slide) .slide-background-content {
-  background-image: none !important;
-  background-color: #fff !important;
-}
 
 
 
