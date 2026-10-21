@@ -272,18 +272,16 @@ html.print-pdf .pdf-page:has(#title-slide) .slide-number-pdf {
   display: none !important;
 }
 html.print-pdf .reveal .slide-logo {
-  display: block !important;
+  display: none !important;
+}
+html.print-pdf .pdf-page:has(#title-slide)::after {
+  content: "";
   position: absolute;
   top: 12px;
   right: 12px;
   width: 400px;
-  height: auto !important;
-  max-height: none !important;
-  left: auto !important;
-  bottom: auto !important;
-  margin: 0 !important;
-  object-fit: contain !important;
-  object-position: right top !important;
+  height: 110px;
+  background: var(--phbern-print-logo) right top / contain no-repeat;
 }
 @media print {
   html, body, .reveal {

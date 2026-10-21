@@ -15,7 +15,11 @@ export function publicDeckUrl(siteUrl: string | undefined, relative: string) {
 export function printHtml(html: string) {
   // Set print options before Reveal creates its PDF pages. Work on a temporary
   // sibling file so images and stylesheets keep their original relative paths.
-  return html.replace(/Reveal\.initialize\s*\(/,
+  const logo = html.match(/<img[^>]+src=["']([^"']+)["'][^>]+class=["'][^"']*\bslide-logo\b[^"']*["']/i)?.[1];
+  const logoStyle = logo
+    ? `<style>html.print-pdf .pdf-page:has(#title-slide)::after { background-image: url("${logo}") !important; }</style>`
+    : '';
+  return (html.replace('</head>', `${logoStyle}</head>`)).replace(/Reveal\.initialize\s*\(/,
     "((options) => Reveal.initialize({...options, pdfSeparateFragments: false, pdfMaxPagesPerSlide: 1, autoSlide: 0, transition: 'none'}))(");
 }
 
