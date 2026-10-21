@@ -241,12 +241,6 @@ html:not(.print-pdf) .reveal .backgrounds .slide-background:first-child .slide-b
   background-position: center 0% !important;
   background-repeat: no-repeat !important;
 }
-html.print-pdf .reveal .backgrounds .slide-background:first-child,
-html.print-pdf .reveal .backgrounds .slide-background:first-child .slide-background-content {
-  background-size: 100% 100% !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
 
 
 
