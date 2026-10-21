@@ -230,11 +230,11 @@ export async function main() {
             }
             const firstBackground = document.querySelector('.backgrounds')?.firstElementChild;
             if (firstBackground instanceof HTMLElement) {
-              firstBackground.style.backgroundSize = '100% 122%';
+              firstBackground.style.backgroundSize = '100% 120%';
               firstBackground.style.backgroundPosition = 'center top';
               const content = firstBackground.querySelector('.slide-background-content');
               if (content instanceof HTMLElement) {
-                content.style.backgroundSize = '100% 122%';
+                content.style.backgroundSize = '100% 120%';
                 content.style.backgroundPosition = 'center top';
               }
             }
