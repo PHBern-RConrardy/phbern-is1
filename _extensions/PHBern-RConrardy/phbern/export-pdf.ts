@@ -239,6 +239,12 @@ export async function main() {
               content.style.setProperty('background-size', '100% auto', 'important');
               content.style.setProperty('background-position', 'center ' + top + 'px', 'important');
             }
+            // Reveal shrinks sections to their content in print view. Anchor
+            // resource links to the full PDF page instead of those sections.
+            for (const link of document.querySelectorAll('section.padlet .padlet-url, section.paper .paper-link')) {
+              const page = link.closest('.pdf-page');
+              if (page) page.appendChild(link);
+            }
             await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
             return true;
           })()`, awaitPromise: true, returnByValue: true,
