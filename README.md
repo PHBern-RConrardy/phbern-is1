@@ -44,6 +44,14 @@ The repository is tested with the Quarto version used by the maintainers. The
 extension bundles its central bibliography, CSL style, Office reference
 documents, logo, slide backgrounds, and Soco St illustrations.
 
+For automatic slide PDFs after `quarto render`, enable the bundled project
+post-render hook and install Quarto's optional Chrome Headless Shell once with
+`quarto install chrome-headless-shell` (Quarto >= 1.9). No Node.js, npm or
+DeckTape installation is needed. See
+[Automatic slide PDF export](docs/revealjs.md#automatic-slide-pdf-export).
+This is already configured for the examples; installation of the format alone
+does not enable a project's hook.
+
 ## Install
 
 From the root of a Quarto project:

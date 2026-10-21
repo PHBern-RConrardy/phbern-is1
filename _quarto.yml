@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - _extensions/PHBern-RConrardy/phbern/export-pdf.ts
   render:
     - examples/index.qmd
     - examples/slides.qmd
